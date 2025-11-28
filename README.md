@@ -68,5 +68,7 @@ Click under plus icon and set this url: http://<LLM_STUDIO_SERER_HOST>:<LLM_STUD
 
 ![Open WebUI Conenction](./images/open_webui_connection.png "Open WebUI Conenction")
 
+- **STEP07**: Use your models
+Now we can select any model deployed in my LLM Server and send a prompt request like this:
 
-
+![Sample prompt](./images/open_webui_prompt.png "Sample prompt")
