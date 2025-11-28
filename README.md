@@ -47,3 +47,26 @@ Now we configure this new LLM Server from LLM Studio. Go again to Developer LLM 
 ![LLM Studio Server Configuration](./images/llm_studio_server_configuration.png "LLM Studio Server Configuration")
 
 With these options we can accedd to the LLM Server with port 1234 externally
+
+- **STEP05**: Install Open WebUI
+We will install Open WebUI from a docker container like this:
+
+```
+$ docker run -d -p 3000:8080 -v open-webui:/app/backend/data --name open-webui ghcr.io/open-webui/open-webui:main
+```
+
+- **STEP06**: Configure Open WebUI
+Now we must create a connection with out LLM Server from Open WebUI. Open WebUI from your browser: http://localhost:3000 and register a first account in it. Later go to Settings under your account
+
+![Open WebUI Settings](./images/open_webui_settings.png "Open WebUI Settings")
+
+And inside settings select Admin Settings at botton. Select the option `Connections` to create our OpenAI connection with LLM Studio Server
+
+![Open WebUI Admin Settings](./images/open_webui_admin_settings.png "Open WebUI Admin Settings")
+
+Click under plus icon and set this url: http://<LLM_STUDIO_SERER_HOST>:<LLM_STUDIO_SERER_PORT>/v1 without any authentication (set Auth to None)
+
+![Open WebUI Conenction](./images/open_webui_connection.png "Open WebUI Conenction")
+
+
+
