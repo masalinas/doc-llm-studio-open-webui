@@ -6,7 +6,7 @@ Integrate LLM models using LLM Studio with Open WebUI
  Follow the next steps to integrate [LLM Studio](https://lmstudio.ai/) with [Open WebUI](https://openwebui.com/)
 
 - **STEP01**: Download LLM Studio and install
-LLM Studio in Ubuntu 24.02. Download [LLM Studio for your architecture](https://lmstudio.ai/). In this case you will download a AppImage file. Copy this file under `/opt/LMStudio`, set some priviledges:
+in Ubuntu 24.02. Download [LLM Studio for your architecture](https://lmstudio.ai/). In this case you will download a AppImage file. Copy this file under `/opt/LMStudio`, set some priviledges:
 
 $ chown own simur:simur /opt/LMStudio
 $ chmod +x /opt/LMStudio/LM_Studio.AppImage
